@@ -7,11 +7,28 @@ public class Main {
                 new Car("Corola", "Toyota", 2009)
 
         };
-        car[0].carInfo();
-        car[1].carInfo();
-        car[2].carInfo();
-        car[0].setMake("Volkswagen");
-        car[0].carInfo();
+        Bike bike = new Bike("mountain bike", "kilimanjaro");
+
+        //System.out.println(bike.getMake() + " " + bike.getModel() + " is " + bike.getType());
+
+        Shirt[] tshirt = {
+                new Shirt("Everlast", "Blue", 49.99f),
+                new Shirt("Gucci", "Yellow", 4999.99f),
+                new Shirt("Supreme", "Olive", 149.99f)
+        };
+        Hoodie huppare = new Hoodie("Off white", "White", 1299.99f);
+
+        System.out.println(huppare.getBrand() + " " + huppare.getColor() + " " + huppare.getPrice() + " " + huppare.getType());
+
+        for(int i = 0; i<=2; i++){
+            //System.out.println(car[i].getMake() + " " + car[i].getModel()+ " " + car[i].getYear() + " is " + car[i].getType());
+            System.out.println(tshirt[i].getBrand() + " " + tshirt[i].getColor() + " " + tshirt[i].getPrice() + " " + tshirt[i].getType());
+
+        }
+
+
+
+
     }
 
 }
