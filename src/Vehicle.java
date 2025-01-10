@@ -1,7 +1,21 @@
 public class Vehicle {
-    public String model, make;
-    public int year;
-    String type;
+    private String model, make;
+    private int year;
+    private String type;
+    private double price = 0.0;
+    private double discount = 0.90;
+
+    public Vehicle(String model, String make, int year, String type) {
+        this.model = model;
+        this.make = make;
+        this.year = year;
+        this.type = type;
+
+    }
+
+    public String soundWarning(){
+        return "none";
+    }
 
     public String getModel() {
         return model;
@@ -33,5 +47,14 @@ public class Vehicle {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public double getPrice() {
+        return price * discount;
+    }
+
+    public void setPrice(double price) {
+        if(price < 0) throw new RuntimeException("bad price");
+        this.price = price;
     }
 }

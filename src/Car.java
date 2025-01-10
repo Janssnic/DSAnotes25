@@ -2,15 +2,14 @@ public class Car extends Vehicle{
 
 
     public Car(String model,String make, int year){
-        super.model = model;
-        super.make = make;
-        super.year = year;
-        super.type = "motorized";
+        super(model, make, year, "motorized");
+        super.setPrice(12345.0);
+
     }
 
-    public void carInfo(){
-        System.out.println(make + " " + model + " " + year);
+    @Override
+    public String soundWarning() {
+        return "tUUUUUUt-tUUUUUUt";
     }
-
 
 }
