@@ -1,9 +1,12 @@
 public class Calculator {
 
-    float num1, num2, result;
+    float num1, num2, num3;
 
     public float multiply(float num1,float num2){
-        result = num1 * num2;
-        return result;
+
+        return num1 * num2;
+    }
+    public float multiply(float num1,float num2, float num3){
+        return num1 * num2 * num3;
     }
 }
