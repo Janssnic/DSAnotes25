@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -42,11 +44,36 @@ public class Main {
             //System.out.println(tshirt[i].getBrand() + " " + tshirt[i].getColor() + " kostar: " + tshirt[i].getPrice() + " typ: " + tshirt[i].getType() + " lagersaldo: " + tshirt[i].getStock());
             //System.out.printf("%s kostar %.2f €, lagersaldo: %d\n", tshirt[i].getBrand(),tshirt[i].getPrice(), tshirt[i].getStock());
             //System.out.println(car[i].soundWarning());
-            String shirtInfo = String.format("%s kostar %.2f €, lagersaldo: %d", tshirt[i].getBrand(), tshirt[i].getPrice(), tshirt[i].getStock());
+            String shirtInfo = String.format("%d - %s kostar %.2f €, lagersaldo: %d",i, tshirt[i].getBrand(), tshirt[i].getPrice(), tshirt[i].getStock());
             System.out.println(shirtInfo);
         }
 
+        /*
+        Scanner scanner = new Scanner(System.in);
 
+        while (true){
+
+            System.out.print("vilken skjorta köpa? (q för quit) ");
+            String userInput = scanner.nextLine();
+                if(userInput.equalsIgnoreCase("q")) {
+                    System.out.println("tack, välkommen åter");
+                    System.exit(0);
+                }else {
+
+                    try {
+                        int index = Integer.parseInt(userInput);
+                        System.out.println("grattis du äger " + tshirt[index].getBrand());
+                        break;
+                    } catch (NumberFormatException e) {
+                        System.out.println("ge ett heltal");
+                    } catch (IndexOutOfBoundsException e) {
+                        System.out.println("det finns ingen sådan skjorta");
+                    }
+                }
+        }*/
+
+        Dice dice = new Dice();
+        dice.rollDice();
 
     }
 
