@@ -1,12 +1,12 @@
-public class Clothing {
-    float price;
+abstract class Clothing {
+    double price;
     String color, brand, type;
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
