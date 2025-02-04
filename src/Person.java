@@ -1,0 +1,22 @@
+public class Person {
+
+    String name;
+    Person next = null;
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    public Person(String name, Person next) {
+        this.next = next;
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
