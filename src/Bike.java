@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Random;
 
 public class Bike extends Vehicle implements IShoppable{
     public Bike(String model, String make) {
